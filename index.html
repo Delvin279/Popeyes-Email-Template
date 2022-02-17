@@ -18,9 +18,9 @@
 	}
 	img {
 		border: 0;
-		font-size: 0;
+
 	}
-	p {
+	p, h1, h2, h3, h4, h5  {
 		margin: 0;
 	}
 	.wrapper {
@@ -48,6 +48,7 @@
 		border-radius: 20px;
 		font-size: 15px;
 		font-weight: bold;
+		line-height: 1.5;
 	}
 	.button-2 {
 		background-color: #ff7d00;
@@ -58,76 +59,79 @@
 		border-radius: 20px;
 		font-size: 15px;
 		font-weight: bold;
+		line-height: 1.5;
 	}
 	.social-links img {
 		border-radius: 55%;
 	}
-	
-	
-	@media screen and (max-width: 600px ) {
-		.three-columns .padding {
-			padding-right: 0!important;
-			padding-left: 0!important;
+
+
+	@media screen and (max-width: 598px ) {
+		.three-column-table .left-column {
+			width: 50%!important;
+			text-align: center!important;
+			padding: 0 10px 0!important;
+			
 		}
-		img.three-img-last {
-			width: 200px!important;
-			max-width: 200px!important;
+		.three-column-table .middle-column {
+			text-align: center!important;
+			width: 50%!important;
+			padding: 0 10px 0!important;
+		}
+		.three-column-table .middle-column.left-column .right-column h3, p {
+			padding: 0 20px 25px!important;
+		}
+		.three-column-table .right-column {
+			text-align: center!important;
+			width: 100%!important;
+			padding: 30px 10px 25px!important;
+			
+		}
+		.three-column-table .right-column img {
+			width: 50%!important;
+		}
+	} 
+
+
+	@media screen and (max-width: 398px ) {
+		.three-column-table .left-column {
+			width: 100%!important;
+			padding: 20px 0 30px!important;
+		}
+		.three-column-table .middle-column {
+			width: 100%!important;
+		}
+		.three-column-table .right-column {
+			width: 100%!important;
+		}
+		.three-column-table .left-column img {
+			width: 90%!important;
+			text-align: center!important;
+		}
+		.three-column-table .middle-column img {
+			width: 90%!important;
+			text-align: center!important;
+		}
+		.three-column-table .right-column img {
+			width: 90%!important;
+			text-align: center!important;
+		}
+	}	
+
+		@media screen and (max-width: 318px ) {
+		img.a-app-1 {
+			text-align: center!important;
+			width: 45%!important;
+		}
+			img.a-app-2 {
+			text-align: center!important;
+			width: 40%!important;
+			padding-top: 10px!important;
 		}
 	}
 
-	@media screen and (max-width: 400px ) {
-		.three-columns .padding {
-			padding-right: 0!important;
-			padding-left: 0!important;
-		}
-		img.three-img {
-			width: 200px!important;
-			max-width: 200px!important;
-		}
-		img.a-app-1 {
-			width: 100px!important;
-			max-width: 100px!important;
-		}
-		img.a-app-2 {
-			width: 90px!important;
-			max-width: 90px!important;
-			height: 30px!important;
-			max-height: 30px!important;
-		}
-		.app-section {
-			padding-top: 30px!important;
-		}
-		.app-section-padding {
-			padding-left: 8px!important;
-			padding-right: 8px!important;
-		}
-		.terms-conditions {
-			padding-left: 14px!important;
-			padding-right: 14px!important;
-		}
-		
-	}
-	@media screen and (max-width: 250px ) {
-		.three-columns .padding {
-			padding-right: 0!important;
-			padding-left: 0!important;
-		}
-		
-		img.a-app-1 {
-			width: 45%!important;
-			max-width: 45%!important;
-			height: 30px!important;
-		}
-		img.a-app-2 {
-			width: 45%!important;
-			max-width: 45%!important;
-			
-		}
-		.app-section {
-			padding-top: 30px!important;
-		}
-		
-	}
+
+	
 </style>
 </head>
 <body>
@@ -136,30 +140,30 @@
 
 		<table class="main" width="100%" cellspacing="0" borderspacing="0" role="presentation">
 
-<!-- LOGO SECTION -->
+			<!-- LOGO SECTION -->
 			<tr>
 				<td style="text-align: center;background-color: #ff7d00;padding: 40px 20px 35px;">
 					<a href="https://www.popeyes.com/?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL82rSjLRSywo0MvJzMvWNy6wVzUyMS6wTY1PTFIDMvOLMtMz8xJz4kuLcmwzQJpUjR1VjdyAqLy8XK8gvyC1MrVYLzk%2FFwDJUxeLUgAAAA%3D%3D" target="_blank"><img src="https://i.ibb.co/QcKzX0Z/popeyes-logo.png" title="Popeyes Logo Image" alt="Popeyes Logo" width="154" height="25"></a>
 				</td>
 			</tr>
 
-<!-- BANNER IMAGE -->
+			<!-- BANNER IMAGE -->
 			<tr>
 				<td style="text-align: center;">
 					<a href="https://www.popeyes.com/rewards/offers/070b8718-1b09-4165-a4e1-a5b58637d4c5" target="_blank"><img src="https://i.ibb.co/6XCmSwn/header-img.png" title="Popeyes Header Image" alt="Popeyes Header" width="600" style="max-width: 100%;"></a>
 				</td>
 			</tr>
 
-<!-- HEADER TEXT -->
+			<!-- HEADER TEXT -->
 			<tr>
-				<td class="header-text" style="text-align: center; background-color: #ff7d00;color: #ffffff;padding: 10px 20px 40px 20px">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+				<td style="text-align: center; background-color: #ff7d00;color: #ffffff;padding: 10px 10px 40px 10px">
+					<table class="header-text" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
 						<tr>
-							<td align="center">
-								<h2><strong style="font-size: 35px;line-height: 40px;">Three times the love</strong></h2>
-								<p style="font-size: 18px;line-height: 22px;">As in our 3 Tenders Carryout Combo for only $6.</p>
-								<p style="font-size: 18px; line-height: 22px; padding: 15px 0 35px;">Swing by and pick up 3 pc of our handcrafted Tenders in your choice of Spicy, Mild or Blackened, plus 1 reg. Side, 1 Biscuit and 1 sm. Drink.</p>
+							<td class="header-content" align="center">
+								<h2><strong style="font-family: Arial, sans-serif; font-size: 35px;line-height: 40px;">Three times the love</strong></h2>
+								<p style="font-family: Arial, sans-serif; font-size: 18px;line-height: 22px;">As in our 3 Tenders Carryout Combo for only $6.</p>
+								<p style="font-family: Arial, sans-serif; font-size: 18px;  line-height: 22px; padding: 15px 0 35px;">Swing by and pick up 3 pc of our handcrafted Tenders in your choice of Spicy, Mild or Blackened, plus 1 reg. Side, 1 Biscuit and 1 sm. Drink.</p>
 
 								<a href="https://www.popeyes.com/offers/070b8718-1b09-4165-a4e1-a5b58637d4c5?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL3QrCIBhAn8bu%2FJs6LRjRTa8xdLkmmX7ohtTTZ3AuDgfOtu9QL5Qe6esksQAkhvSiAq5okAImP1t36ppLeIZk43yUOG3%2FCYkbGu6d1hqBDP7jK1nyu5e8rr7ULkwzZzQ3mDt2xpKPClvpObbKKTMK%2FZCL%2BgHitv2nggAAAA%3D%3D" class="button" target="_blank">Get Yours Now</a>
 							</td>
@@ -170,132 +174,94 @@
 			</tr>
 
 
-<!-- HEADING -->
+			<!-- THREE COLUMN SECTION -->
 			<tr>
-				<td style="padding: 25px 0 15px;">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+				<td>
+					<table align="left" class="three-column-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 20px 0 15px;">
 						<tr>
-							<td style="text-align: center;padding: 0 30px;">
-								<p style=" font-size: 35px; color: #ff7d00; font-weight: bold;">Make a good thing even better by adding these favorites.</p>
+							<td align="center">
+								<h2 style="font-family: Arial, sans-serif; font-size: 35px; line-height: 1.4; color: #ff7d00; font-weight: bold; padding: 0 10px 0;">Make a good thing even better<br> by adding these favorites.</h2>
 							</td>
 						</tr>
-					</table>	
-				<td>
-			</tr>
 
-<!-- THREE COLUMN SECTION -->
-			<tr>
-				<td>
-
-					<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 						<tr>
-							<td class="three-columns" style="padding: 0;font-size: 0;text-align: center;">
+							<td>
 								
-								<table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 200px;display: inline-block;" role="presentation">
+								<!-- start of 3 col -->
+								<table class="left-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 10px 20px;">
 									<tr>
-										<td class="padding" style="padding: 0 5px 40px;">
-											
-											<table class="content" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-												<tr>
-													<td align="center">
-														
-														<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank"><img class="three-img" src="https://i.ibb.co/tpdpr7k/pic-mac.png" alt="Homestyle Mac & Cheese" width="180" title="Popeyes Homestyle Mac & Cheese"></a>
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 10px 8px;">
-														<p style="color: #ff7d00;font-size: 13px;line-height: 16px;font-weight: bold;">Homestyle Mac & Cheese</p>
-														<p style="color: #999999;font-size: 13px;line-height: 16px;">Made with real butter and cream and topped with a golden-brown crust.</p>
-														
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding-top: 22px;">
-														<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank" class="button-2">Order now</a>
-													</td>
-												</tr>
-											</table>
-											
-
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank"><img class="three-col-img" src="https://i.ibb.co/tpdpr7k/pic-mac.png" alt="Homestyle Mac & Cheese" width="180" 
+											title="Popeyes Homestyle Mac & Cheese"></a>  
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<h5 style="font-family: Arial, sans-serif; color: #ff7d00;font-size: 14px;line-height: 1.4;font-weight: bold;">Homestyle Mac & Cheese</h5>
+											<p style="font-family: Arial, sans-serif; color: #999999;font-size: 14px; line-height: 1.4; padding-bottom: 30px;">Made with real butter and cream and topped with a golden-brown crust.</p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank" class="button-2">Order now</a> 
 										</td>
 									</tr>
 								</table>
 
-								<table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 200px;display: inline-block;" role="presentation">
+								<table class="middle-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 10px 20px;">
 									<tr>
-										<td class="padding" style="padding: 0 5px 40px;">
-											
-											<table class="content" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-												<tr>
-													<td align="center">
-														<a href="https://www.popeyes.com/menu/section-507d2333-02fa-4c63-986f-5d33ae298d6b?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWLWwrDIBQFV2P%2F1OBNbFIIpT%2FdRvCVRmr0kijSrr4WDswwcLac8bxxXuJX90whsuDjmwPeiegBZ7cofWmaDv%2FyUYWlHGHe%2FicCDyKebbVWhgndx53MpL2V3cXScDqTfYp06K5WAADtxKpobyTQaZQrHSyAcmIardQ%2FfJKNi4gAAAA%3D" target="_blank"><img class="three-img" src="https://i.ibb.co/163KGmJ/pic-nuggets.png" alt="Hand-battered Nuggets" width="180" title="Popeyes Hand-battered Nuggets"></a>
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 10px 8px;">
-														<p style="color: #ff7d00;font-size: 13px;line-height: 16px;font-weight: bold;">Hand-battered Nuggets</p>
-														<p style="color: #999999;font-size: 13px;line-height: 16px;">All white meat, juicy, and perfectly seasoned to crunchy perfection.</p>
-														
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding-top: 22px;">
-														<a href="https://www.popeyes.com/menu/section-507d2333-02fa-4c63-986f-5d33ae298d6b?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWLWwrDIBQFV2P%2F1OBNbFIIpT%2FdRvCVRmr0kijSrr4WDswwcLac8bxxXuJX90whsuDjmwPeiegBZ7cofWmaDv%2FyUYWlHGHe%2FicCDyKebbVWhgndx53MpL2V3cXScDqTfYp06K5WAADtxKpobyTQaZQrHSyAcmIardQ%2FfJKNi4gAAAA%3D" target="_blank" class="button-2">Order now</a>
-													</td>
-												</tr>
-											</table>
-											
-
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/section-507d2333-02fa-4c63-986f-5d33ae298d6b?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWLWwrDIBQFV2P%2F1OBNbFIIpT%2FdRvCVRmr0kijSrr4WDswwcLac8bxxXuJX90whsuDjmwPeiegBZ7cofWmaDv%2FyUYWlHGHe%2FicCDyKebbVWhgndx53MpL2V3cXScDqTfYp06K5WAADtxKpobyTQaZQrHSyAcmIardQ%2FfJKNi4gAAAA%3D" target="_blank"><img class="three-col-img" src="https://i.ibb.co/J2c4NqK/pic-chicken-sandwich.png" alt="Homestyle Mac & Cheese" width="180" 
+											title="Popeyes Homestyle Mac & Cheese"></a>  
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<h5 style="font-family: Arial, sans-serif; color: #ff7d00;font-size: 14px;line-height: 1.4;font-weight: bold;">Chicken Sandwich</h5>
+											<p style="font-family: Arial, sans-serif; color: #999999;font-size: 14px; line-height: 1.4; padding-bottom: 30px;">Crispy. Tender. Juicy. One bite and you'll know why it's so famous.</p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank" class="button-2">Order now</a> 
 										</td>
 									</tr>
 								</table>
 
-								<table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 200px;display: inline-block;" role="presentation">
+								<table class="right-column" width="33.33%" align="left" border="0" cellspacing="0" cellpadding="0" style="padding: 5px 10px 20px;">
 									<tr>
-										<td class="padding" style="padding: 0 5px 40px;">
-											
-											<table class="content" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-												<tr>
-													<td align="center">
-
-														<a href="https://www.popeyes.com/menu/section-863a184b-8058-42a8-b07b-ee524c89df19?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL0QrCIBhGn2bdqZu6coMR3fQaQ%2B2vSU5%2FpiL19Bl8cA4Hvi1nTDNjJXyNpBqRehfeTOC141LgAqs2p6bxcC8XtF%2FL4Zftf%2BrEreP3tlorxYjwgURt3FvZIZSGBDa7GIg6Cz0oaYjqR0Uk14qY%2FmIIwMilVdPjOUw%2FpwQO%2FogAAAA%3D" target="_blank"><img class="three-img-last" src="https://i.ibb.co/J2c4NqK/pic-chicken-sandwich.png" alt="Chicken Sandwich" width="180" title="Popeyes Chicken Sandwich"></a>
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding: 10px 8px;">
-														<p style="color: #ff7d00;font-size: 13px;line-height: 16px;font-weight: bold;">Chicken Sandwich</p>
-														<p style="color: #999999;font-size: 13px;line-height: 16px;">Crispy. Tender. Juicy. One bite and you'll know why it's famous. (Classic or spicy.)</p>
-														
-													</td>
-												</tr>
-												<tr>
-													<td align="center" style="padding-top: 22px;">
-														<a href="https://www.popeyes.com/menu/section-863a184b-8058-42a8-b07b-ee524c89df19?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL0QrCIBhGn2bdqZu6coMR3fQaQ%2B2vSU5%2FpiL19Bl8cA4Hvi1nTDNjJXyNpBqRehfeTOC141LgAqs2p6bxcC8XtF%2FL4Zftf%2BrEreP3tlorxYjwgURt3FvZIZSGBDa7GIg6Cz0oaYjqR0Uk14qY%2FmIIwMilVdPjOUw%2FpwQO%2FogAAAA%3D" target="_blank" class="button-2">Order now</a>
-
-													</td>
-												</tr>
-											</table>
-											
-
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank"><img class="three-col-img last" src="https://i.ibb.co/163KGmJ/pic-nuggets.png" alt="Homestyle Mac & Cheese" width="180" 
+											title="Popeyes Homestyle Mac & Cheese"></a>  
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<h5 style="font-family: Arial, sans-serif; color: #ff7d00;font-size: 14px;line-height: 1.4;font-weight: bold;">Hand-battered Nuggets</h5>
+											<p style="font-family: Arial, sans-serif; color: #999999;font-size: 14px; line-height: 1.4; padding-bottom: 30px;">All white meat, juicy, and perfectly seasoned to crunchy perfection.</p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<a href="https://www.popeyes.com/menu/picker-eb9293e0-ca1d-4a04-a7d6-d0a36d6080ca?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAAxWL2wrDIBAFvyZ989IotimE0Jf%2BRlh1aSRGlyQi7dfXwoEZBs5ynnQ8hCjpazUHIh5DWoWiqeu1ohFnsJemeQ%2FvkCDOZY%2Fj8j916tn1r7ZaK6dM%2BMGDu7y1smEqDRTcijtDO%2FSDQskcXD3TIDWDmzfMS1DGG3mXDn6dqhbehwAAAA%3D%3D" target="_blank" class="button-2">Order now</a> 
 										</td>
 									</tr>
 								</table>
-
+								<!-- end of 3 col -->
+									
 							</td>
 						</tr>
-					</table>
-
 				</td>
 			</tr>
-
-<!-- APP SECTION -->
+			
+			<!-- APP SECTION -->
 			<tr>
 				<td class="app-section" style="padding: 0 0 30px;">
 
-					<table align="center" width="90%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+					<table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
 						<tr>
-							<td style="background-color: #f9f9f9;padding: 20px 10px 15px; text-align: center;font-size: 0;line-height: 0;">
+							<td style="background-color: #f9f9f9; padding: 20px 0 15px; text-align: center;font-size: 0;line-height: 0;">
 			
 								<table width=100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 			
@@ -308,7 +274,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td class="app-section-padding" style="padding: 15px 30px 0; text-align: center;">
+										<td class="app-section-padding" style="padding: 15px 0px 0; text-align: center;">
 											<p style="font-size: 16px;line-height: 23px;font-weight: 500;color: #999999;">Before your hunger distracts you,<br> take a moment to <span><a href="https://apps.apple.com/us/app/popeyes/id1386566985?_branch_match_id=948742908106772931&utm_source=email&utm_campaign=Welcome%20Web%20User&utm_medium=DownloadCTA&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL82rSjLRSywo0MvJzMvWDwoOi6hyyssKNAAAh3LDdiEAAAA%3D" target="_blank" style="color: #ff7d00;">download the Popeyes® App</a></span>.<br> You'll be the first to know about special deals, in your area.</p>
 
 										</td>
@@ -323,12 +289,12 @@
 				</td>
 			</tr> 
 
-<!-- LINE -->
+			<!-- LINE -->
 			<tr>
 				<td height="1" style="background-color: #e7e7e7;"></td>
 			</tr>
 
-<!-- SOCIAL LINKS -->
+			<!-- SOCIAL LINKS -->
 			<tr>
 				<td style="padding: 25px 10px 10px;">
 
@@ -350,19 +316,19 @@
 				</td>
 			</tr>
 
-<!-- TERMS & CONDITIONS -->
+			<!-- TERMS & CONDITIONS -->
 			<tr>
-				<td class="terms-conditions" style="font-size: 0;line-height: 0;  padding: 20px 30px 5px;">
+				<td class="terms-conditions" style="font-size: 0;line-height: 0;  padding: 20px 10px 5px;">
 
 					<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
 						<tr>
-							<td style="text-align: center;">
+							<td style="text-align: center; margin: 0;">
 
 								<p style="font-size: 11px; line-height: 15px;color: #444444;">At participating US restaurants. Free Popeyes® account and registration required. Valid at participating US Popeyes® restaurants. Available for redemption through the Popeyes® App or on <span><a href="https://www.popeyes.com/?%243p=e_ab&_branch_match_id=948742908106772931&utm_medium=Email%20Braze&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL82rSjLRSywo0MvJzMvWNy6wVzUyMS6wTY1PTFIDMvOLMtMz8xJz4kuLcmwzQJpUjR1VjdyAqLy8XK8gvyC1MrVYLzk%2FFwDJUxeLUgAAAA%3D%3D" target="_blank" style="color: #ff7d00;text-decoration: none;">popeyes.com</a></span> for order ahead or in-store pickup. Homestyle Mac & Cheese not available as a side with this Offer. Not available in AK, HI, PR & USVI. Not valid on 3rd party delivery. Not valid with any other offers, discounts or coupons. No substitutions. One per Account. Void where prohibited. Tax extra.</p>
-								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 10px;">Hiring decisions, compensation, benefits and other employment terms and conditions at independent franchised Popeyes® Restaurants will vary and are determined solely by the Franchise.</p>
-								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 10px;">You've received this message because you're signed up to receive emails about special offers and other information from Popeyes®. Don't want to receive these emails anymore? You can unsubscribe by clicking <span><a href="#" target="_blank" style="color: #ff7d00;text-decoration: none;">here</a></span>. However, you may continue to receive transactional emails such as electronic receipts.</p>
-								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 10px;">TM & © 2022 Popeyes Louisiana Kitchen, Inc. 5707 Blue Lagoon Drive Miami, Florida 33126.</p>
+								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 8px;">Hiring decisions, compensation, benefits and other employment terms and conditions at independent franchised Popeyes® Restaurants will vary and are determined solely by the Franchise.</p>
+								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 8px;">You've received this message because you're signed up to receive emails about special offers and other information from Popeyes®. Don't want to receive these emails anymore? You can unsubscribe by clicking <span><a href="#" target="_blank" style="color: #ff7d00;text-decoration: none;">here</a></span>. However, you may continue to receive transactional emails such as electronic receipts.</p>
+								<p style="font-size: 11px; line-height: 15px;color: #444444;padding-top: 8px;">TM & © 2022 Popeyes Louisiana Kitchen, Inc. 5707 Blue Lagoon Drive Miami, Florida 33126.</p>
 
 							</td>
 						</tr>
@@ -377,4 +343,3 @@
 	</center>
 </body>
 </html>
-
